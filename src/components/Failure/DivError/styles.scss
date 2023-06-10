@@ -1,0 +1,63 @@
+@import "../../../sass/variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,900&display=swap');
+
+
+.error {
+  max-width: 26vw;
+  border: 3px solid $color-secondary;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0.9;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  color: $black-color;
+  font-weight: bold;
+  .title {
+    display: flex;
+    min-height: 12rem ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-bottom: 3px solid $color-secondary;
+  }
+  .description {
+    padding: .5rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 426px) {
+  .error {
+    max-width: 80vw !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .description {
+    font-size: 1.2rem !important;
+    width: auto;
+  }
+}
+
+@media (max-width: 330px) {
+  .title {
+    font-size: 1.7rem  !important;
+    padding: .3rem .5rem !important;
+  }
+
+  .description {
+    font-size: 1rem !important;
+    margin: 1rem !important;
+    padding: 0 !important;
+  }
+}

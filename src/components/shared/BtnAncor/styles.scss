@@ -1,0 +1,37 @@
+@import "../../../sass/variables.scss";
+
+.btn-ancor {
+  text-decoration: none;
+  font-size: 1.8rem;
+  background-color: $color-secondary;
+  color: $color-primary;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-width: 27rem;
+  text-align: center;
+}
+
+@keyframes btn-pisca {
+  50% {scale: 1.1;}
+}
+.btn-pisca {
+  -webkit-animation: btn-pisca 2s linear infinite;
+  -moz-animation: btn-pisca 2s linear infinite;
+  -ms-animation: btn-pisca 2s linear infinite;
+  -o-animation: btn-pisca 2s linear infinite;
+  animation: btn-pisca 2s linear infinite;
+}
+
+@media (max-width: 426px) {
+  .btn-ancor {
+    font-size: 1.1rem ;
+    width: 80vw !important;
+    min-width: auto !important;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+
+@import "../../sass/variables.scss";
+
+.container02 {
+  padding: 4rem 1rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $black-color;
+  gap: 1.7rem;
+
+  h2 {
+    font-size:2.5rem;
+    color: $color-primary;
+  }
+ 
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    .complications-content {
+      font-size: 1.3rem;
+      color: $color-primary;
+      width: 70vw;
+      text-align: left;
+      line-height: 2rem;
+      padding: 0 1rem;
+      font-weight: bold;
+
+    }
+
+    .list-errors {
+      padding: 1rem 0;
+      list-style: none;
+      li {
+        font-size: 1.5rem;
+        gap: .7rem ;
+        display: flex;
+        align-items: center;
+        color: $color-primary;
+        margin-top: 0.7rem;
+        span {
+          font-size: 1.8rem;
+          color: $color-downsides;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 426px) {
+  h2 {
+    text-align: center;
+    font-size: 2.2rem !important;
+  }
+
+  section {
+    align-items: center !important;
+  }
+
+  .complications-content {
+    text-align: center !important;
+  }
+
+  .list-errors {
+    li {
+      font-size: 1.4rem !important;
+      width: 70vw;
+      gap: 1rem !important;
+      width: 90vw !important;
+      padding: 0.5rem 1rem;
+      flex-direction: column;
+      font-size: 1.2rem !important;
+      width: 70vw;
+      border: 1px solid $color-downsides;
+      border-radius: 1rem;
+      text-align: center;
+      span {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .complications-content {
+    font-size: 1.2rem !important;
+  }
+}

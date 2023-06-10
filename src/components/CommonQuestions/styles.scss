@@ -1,0 +1,97 @@
+@import "../../sass/variables.scss";
+@import "../../sass/commons.scss";
+
+.container11 {
+  width: 100vw;
+  display: flex;
+  padding: 4rem 0;
+  align-items: center;
+  gap: 4rem;
+  flex-direction: column;
+
+  .accordion {
+    width: 70vw;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+    .accordion-item {
+      .accordion-header {
+
+        .accordion-button {
+          font-weight: bold;
+          font-size: 1.5rem;
+          display: flex;
+          gap: 1rem;
+          span {
+            color: $color-secondary;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+
+      .accordion-collapse {
+
+        .accordion-body {
+          color: #571b83;
+          font-size: 1.5rem;
+          font-weight: bold;
+          padding: 2rem .5rem;
+        }
+      }
+    }
+      
+      
+  }
+
+  .suport {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    .description-suport {
+      font-size: 2rem;
+      width: 60vw;
+      text-align: center;
+      font-weight: bold;
+      span {
+        color: #1CD444;
+      }
+    }
+    .btn-wpp {
+      font-size: 1.6rem;
+      text-decoration: none;
+      display: flex;
+      gap: 0.6rem;
+      background-color: #1CD444;
+      padding: .7rem 1rem;
+      border-radius: 5px;
+      color: $color-primary;
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 426px) {
+  .accordion {
+    width: 80vw !important;
+  }
+
+  .accordion-button {
+    font-size: 1.2rem !important;
+  }
+
+  .accordion-body {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 376px) {
+  .description-suport {
+    width: 80vw !important;
+  }
+}

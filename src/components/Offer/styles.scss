@@ -1,0 +1,247 @@
+@import "../../sass/variables.scss";
+@import "../../sass/commons.scss";
+
+
+.container10 {
+  padding: 3rem 4rem;
+  width: 100vw;
+  background-color: $black-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  .title-container {
+    font-size: 3rem;
+    color: $color-primary;
+    border-bottom: 2px solid $color-secondary;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    
+    .benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h1 {
+        color: $color-primary;
+        font-size: 1.4rem;
+        width: 60%;
+      }
+
+      li {
+        font-size: 1.2rem;
+        gap: 1rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: 75%;
+        padding: 1rem;
+        border-bottom: 2px solid $color-secondary;
+        color: $color-primary;
+        background-color: #FFFFFF0F; 
+        transition: all .6s;
+        span {
+          color: $color-secondary;
+        }
+        &:hover {
+          cursor: pointer;
+          transition: all 0.6s;
+          background-color: #3b3a3a2f;
+        }
+      }
+    }
+
+    .offer {
+      max-width: 30vw;
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 3px solid $color-secondary;
+      padding: 2rem 1rem;
+      border-radius: 1rem;
+      background-color: #FFFFFF0F;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+      h1 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #7CFC00;
+        span {
+          text-decoration: underline;
+        }
+      }
+
+
+      .old-price {
+        font-size: 2rem;
+        color: $color-downsides;
+        text-decoration:line-through;
+      }
+
+      .pieces {
+        font-size: 2.5rem;
+        color: $color-primary;
+      }
+
+      .new-price {
+        font-size: 5.5rem;
+        font-weight: bold;
+        color: #7CFC00;
+      }
+
+      .other-option {
+        font-size: 1.7rem;
+        color: $color-primary;
+      }
+
+      a{
+        text-decoration: none;
+        padding: 1rem 2rem;
+        color: $color-primary;
+        background-color: $color-secondary;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .guarantee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    .img-garantia {
+      width: 20vw;
+    }
+    h1,h2 {
+      color: $color-primary;
+      font-size: 2.4rem;
+    }
+
+    .avaliation {
+      font-size: 10rem;
+      color: #7CFC00;
+    }
+
+    p {
+      color: $color-primary; 
+      font-size: 1.2rem;
+      text-align: center;
+      width: 30vw;
+      min-width: 50vw;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 426px) {
+
+  .container10 {
+    padding: 1rem !important;
+  }
+
+  section {
+    gap: 3rem !important;
+  }
+
+  .benefits {
+    align-items: center;
+    margin-left: -1.3rem;
+    h1 {
+      font-size: 1.5rem !important;
+    }
+    li {
+      width: 85vw !important;
+    }
+  }
+
+
+  .offer {
+    max-width: 82vw !important;
+    padding: 1.5rem 2rem !important;
+    gap: .5rem !important ;
+
+    h1 {
+     font-size: 1.6rem !important;
+     width: 100% !important;
+    }
+
+    .old-price {
+      font-size: 2rem !important;
+    }
+
+    p {
+      font-size: 1.8rem !important;
+    }
+
+    .new-price {
+      font-size: 5rem !important;
+    }
+
+    a {
+      text-align: center;
+    }
+  }
+
+  .guarantee {
+    margin-left: .5rem;
+    p {
+      font-size: 1rem !important;
+    }
+
+    .avaliation {
+      font-size: 7rem !important;
+    }
+
+    .img-five-stars {
+      order: 1;
+    }
+
+    
+  }
+}
+
+
+@media (max-width: 321px) {
+  .offer {
+    h1 {
+      font-size: 1.3rem !important;
+    }
+
+    .new-price {
+      font-size: 3rem !important
+    }
+
+    p {
+      font-size: 1.5rem !important;
+    }
+
+    a {
+      font-size: .8rem !important;
+      width: 95% !important;
+    }
+  }
+
+  .img-garantia {
+    width: 50vw !important;
+  }
+
+  .guarantee {
+    h1 {
+      font-size: 1.7rem !important;
+    }
+  }
+
+  .title-container {
+    font-size: 1.85rem !important;
+  }
+}

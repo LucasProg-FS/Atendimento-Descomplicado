@@ -1,0 +1,26 @@
+@import "../../sass/variables.scss";
+
+footer {
+  background-color: $black-color;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  p {
+    border-top: 1px solid $color-primary;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    color: $color-primary;
+  }
+}
+
+@media (max-width: 426px) {
+  footer {
+    border-top: 1px solid $color-primary;
+    p {
+      border: none;
+      font-size: .9rem !important;
+    }
+  }
+}
