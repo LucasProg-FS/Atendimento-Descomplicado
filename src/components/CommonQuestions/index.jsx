@@ -59,7 +59,7 @@ const CommonQuestions = () => {
          </div>
         </div>
       </div>
-      <BtnAncor content={"QUERO O ATENDIMENTO DESCOMPLICADO"} effect={true} />
+      <BtnAncor content={"QUERO O ATENDIMENTO DESCOMPLICADO"} effect={true} link={"#offer"}/>
       <div className="suport">
         <h1 className="with-bg-purple">Ficou com alguma duvida?</h1>
         <p className="description-suport">Entre em contato com nosso time de Suporte Exclusivo clicando no botão <span>WhatsApp</span> logo abaixo!</p>
