@@ -69,9 +69,7 @@
 
     <script>
       (function () {
-        console.log("script esta sendo executado");
         const utmParamQueryString = new URLSearchParams(window.location.search);
-        console.log(utmParamQueryString);
         if (utmParamQueryString.toString()) {
           var navLinks = document.querySelectorAll("a");
           navLinks.forEach(function (item) {
