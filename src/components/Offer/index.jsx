@@ -21,7 +21,7 @@ const Offer = () => {
           <p className="pieces">por apenas 6X de</p>
           <p className="new-price">R$5,51</p>
           <p className="other-option">OU R$29,90 À VISTA.</p>
-          <a href="https://sun.eduzz.com/1872971?b=0">QUERO GARANTIR MEU ACESSO!</a>
+          <a id="ancor-checkout" href="https://sun.eduzz.com/1872971?b=0">QUERO GARANTIR MEU ACESSO!</a>
         </div>
       </section>
       <div className="guarantee">
@@ -34,6 +34,8 @@ const Offer = () => {
           <img src="/5-estrelas.png" className="img-five-stars" alt="Imagem Representando 5 estrelas" />
         </div>
     </div>
+
+    
   )
 }
 

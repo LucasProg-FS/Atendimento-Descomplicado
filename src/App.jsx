@@ -13,8 +13,25 @@ import InfoDetails from './components/InfoDetails'
 import Offer from './components/Offer'
 import Product from './components/Product'
 import WhoIsUs from './components/WhoIsUs'
+import React, { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    const utmParamQueryString = new URLSearchParams(window.location.search);
+    if (utmParamQueryString.toString()) {
+      const navLinks = document.querySelectorAll('a');
+      navLinks.forEach(function (item) {
+        if (item.href.indexOf('https://sun.eduzz.com') !== -1) {
+          if (item.href.indexOf('?') === -1) {
+            item.href += '?' + utmParamQueryString.toString();
+          } else {
+            item.href += '&' + utmParamQueryString.toString();
+          }
+        }
+      });
+    }
+  }, []);
+  
 
   return (
     <>
@@ -32,6 +49,8 @@ function App() {
       <WhoIsUs />
       <Footer/>
     </>
+
+    
   )
 }
 
